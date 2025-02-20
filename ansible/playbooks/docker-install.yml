@@ -10,9 +10,9 @@
     - name: Install Docker
       yum:
         name: docker
-        state: absent
+        state: present
       become: true
-
+  
     - name: Start Docker service
       service:
         name: docker
